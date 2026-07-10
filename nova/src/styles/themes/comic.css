@@ -1,0 +1,31 @@
+[data-theme="comic"] {
+  --bg: #fff6e0;
+  --surface: #ffffff;
+  --surface-2: #ffedc2;
+  --border: #1a1a1a;
+  --text: #1a1a1a;
+  --muted: #6b6656;
+  --accent: #ff4d6d;
+  --accent-text: #ffffff;
+
+  --font-display: "Bangers", "Baloo 2", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Baloo 2", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --radius: 14px;
+  --shadow: 3px 3px 0 var(--border);
+  --panel-border-width: 3px;
+
+  --hero-a: #ffd23f;
+  --hero-b: #ff8fab;
+  --hero-c: #7ee8fa;
+  --hero-glow: rgba(255, 255, 255, 0.5);
+
+  background-image: radial-gradient(var(--border) 1px, transparent 1.4px);
+  background-size: 14px 14px;
+}
+
+[data-theme="comic"] .nova-panel {
+  border: var(--panel-border-width) solid var(--border);
+  box-shadow: var(--shadow);
+}

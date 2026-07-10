@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova — write it down, find it again</title>
+  <meta name="description" content="A calm, local-first, block-based notes app." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Bangers&family=Baloo+2:wght@500;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: ["class"],
+      theme: {
+        extend: {
+          colors: {
+            bg: "var(--bg)",
+            surface: "var(--surface)",
+            surface2: "var(--surface-2)",
+            border: "var(--border)",
+            text: "var(--text)",
+            muted: "var(--muted)",
+            accent: "var(--accent)",
+            "accent-text": "var(--accent-text)",
+          },
+          fontFamily: {
+            display: "var(--font-display)",
+            body: "var(--font-body)",
+            mono: "var(--font-mono)",
+          },
+          borderRadius: {
+            nova: "var(--radius)",
+          },
+          boxShadow: {
+            nova: "var(--shadow)",
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Import map: pin React/ReactDOM once, everything else reuses them via ?external= -->
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@18.3.1",
+        "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+        "react/jsx-dev-runtime": "https://esm.sh/react@18.3.1/jsx-dev-runtime",
+        "react-dom": "https://esm.sh/react-dom@18.3.1",
+        "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+        "htm": "https://esm.sh/htm@3.1.1",
+        "dexie": "https://esm.sh/dexie@4.0.8",
+        "framer-motion": "https://esm.sh/framer-motion@11.3.19?external=react,react-dom",
+        "lucide-react": "https://esm.sh/lucide-react@0.417.0?external=react,react-dom",
+        "highlight.js": "https://esm.sh/highlight.js@11.10.0"
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="/src/styles/base.css" />
+  <link rel="stylesheet" href="/src/styles/themes/light.css" />
+  <link rel="stylesheet" href="/src/styles/themes/dark.css" />
+  <link rel="stylesheet" href="/src/styles/themes/comic.css" />
+  <link rel="stylesheet" href="/src/styles/themes/hacker.css" />
+  <link rel="stylesheet" href="/src/styles/themes/professional.css" />
+
+  <!-- inline favicon: comet arc mark -->
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 22 A14 14 0 0 1 26 10' fill='none' stroke='%236366f1' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='26' cy='10' r='3' fill='%236366f1'/%3E%3C/svg%3E"
+  />
+</head>
+<body class="bg-bg text-text font-body antialiased">
+  <div id="root"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
