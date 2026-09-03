@@ -2,7 +2,7 @@
 
 Nova is a modern note-taking web app that combines the block-based writing style of Notion with the flexibility of Obsidian. It lets you write notes, organize them, attach files, and switch between five distinct themes to match your mood or workflow.
 
-## Live Web: https://astounding-tulumba-ed8b0f.netlify.app/
+## Live Web: https://nova-notes-rust.vercel.app/
 
 ## Features
 
